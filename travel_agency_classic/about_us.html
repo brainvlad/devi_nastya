@@ -20,8 +20,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../burger/css/burger.css">
 </head>
 <body>
+
+<div class="burger-menu">
+    <div class="burger-menu__overlay"></div>
+    <div class="burger-menu__button">
+        <i class="fas fa-ellipsis-v fa-lg"></i>
+    </div>
+    <nav class="burger-menu__nav">
+        <a href="#" class="burger-menu__link"><i class="fas fa-home fa-3x"></i> <span>Home</span></a>
+        <a href="#" class="burger-menu__link"><i class="fas fa-plane-departure fa-3x"></i> <span>Tours</span></a>
+        <a href="#" class="burger-menu__link"><i class="fas fa-info-circle fa-3x"></i> <span>About Us</span></a>
+        <a href="#" class="burger-menu__link"><i class="fas fa-contact-book fa-3x"></i> <span>Contact</span></a>
+    </nav>
+</div>
+
 <header class="header">
     <nav class="header-menu container">
         <ul class="header-menu__list">
@@ -107,5 +122,11 @@
         </div>
     </div>
 </footer>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+</script>
+<script src="js/burger.js"></script>
 </body>
 </html>
