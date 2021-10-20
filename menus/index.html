@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР 13</title>
+    <!--    font include-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!--    font include-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="content">
+    <section class="col">
+        <h1>Горизонтальное меню</h1>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li>
+                    <a href="#" class="menu__link">1 Level ⤵</a>
+                    <ul class="sub-menu__list">
+                        <li>
+                            <a href="#" class="sub-menu__link">2 level</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-menu__link">2 level ⤵</a>
+                            <ul class="sub-sub-menu__list">
+                                <li>
+                                    <a href="#" class="sub-sub-menu__link">3 level</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-sub-menu__link">3 level</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-sub-menu__link">3 level</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="sub-sub-menu__link">3 level</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-menu__link">2 level</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">1 Level</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">1 Level</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="col">
+        <h1>Вертикальное меню</h1>
+        <nav class="menu-vertical">
+            <ul class="menu-vertical__list">
+                <li id="first_step">
+                    <a class="menu-vertical__link">1 Level ⤵</a>
+                </li>
+                <ul class="sub-menu-vertical__list">
+                    <li>
+                        <a href="#" class="sub-menu-vertical__link">2 level</a>
+                    </li>
+                    <li id="second_step">
+                        <a class="sub-menu-vertical__link" >2 level ⤵</a>
+                    </li>
+                    <ul class="sub-sub-menu-vertical__list">
+                        <li>
+                            <a href="#" class="sub-sub-menu-vertical__link">3 level</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-sub-menu-vertical__link">3 level</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-sub-menu-vertical__link">3 level</a>
+                        </li>
+                        <li>
+                            <a href="#" class="sub-sub-menu-vertical__link">3 level</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#" class="sub-menu-vertical__link">2 level</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#" class="menu-vertical__link">1 Level</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-vertical__link">1 Level</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</main>
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
