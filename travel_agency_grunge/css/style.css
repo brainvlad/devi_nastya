@@ -188,6 +188,11 @@ a::before {
     align-items: center;
     font-size: 24px;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: transform .3s;
+}
+.tour__button:hover {
+    transform: translateY(-10px);
 }
 
 .about {
