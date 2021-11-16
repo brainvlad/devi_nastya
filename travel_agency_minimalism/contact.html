@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-1180">
@@ -11,85 +12,111 @@
     <link rel="manifest" href="icon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/burger.css">
     <!--  include font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Red+Hat+Display&display=swap" rel="stylesheet">
-<!--    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous"/>
+    <!--    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+        integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+        integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
 </head>
+
 <body>
-<header class="header">
-    <nav class="header-menu container">
-        <ul class="header-menu__list">
-            <li><a href="index.html" class="header-menu__link">Home</a></li>
-            <li><a href="tours.html" class="header-menu__link">Tours</a></li>
-            <li><img src="img/header-logo.png" alt="header-logo"></li>
-            <li><a href="about_us.html" class="header-menu__link">About Us</a></li>
-            <li><a href="contact.html" class="header-menu__link header-menu__link-active">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main class="container">
-    <section class="contact-section">
-        <div class="contact__img">
-            <img src="img/contact/contact-welcome-img.png" alt="contact-img">
+    <div class="burger-menu">
+        <div class="burger-menu__overlay"></div>
+        <div class="burger-menu__button">
+            <i class="fas fa-ellipsis-v fa-lg"></i>
         </div>
-        <div class="contact">
-            <h2 class="contact__title">Travel Agency</h2>
-            <h3 class="contact__info">Britain, London, Storgata 26</h3>
-            <a class="contact__info contact__info-link" href="tel:+47221234567">+47 22 123 45 67</a>
-            <a class="contact__info contact__info-link" href="mailto:hello@mail.com">hello@mail.com</a>
-            <h3 class="contact__info">Every day: 10 a.m. - 6 p.m.</h3>
-            <div class="contact-social">
-                <a class="contact-social__icon fab fa-facebook fa-2x"></a>
-                <a class="contact-social__icon fab fa-twitter fa-2x"></a>
-                <a class="contact-social__icon fab fa-instagram fa-2x"></a>
+        <nav class="burger-menu__nav">
+            <a href="index.html" class="burger-menu__link"><i class="fas fa-home fa-3x"></i> <span>Home</span></a>
+            <a href="tours.html" class="burger-menu__link"><i class="fas fa-plane-departure fa-3x"></i>
+                <span>Tours</span></a>
+            <a href="about_us.html" class="burger-menu__link"><i class="fas fa-info-circle fa-3x"></i> <span>About
+                    Us</span></a>
+            <a href="contact.html" class="burger-menu__link"><i class="fas fa-contact-book fa-3x"></i>
+                <span>Contact</span></a>
+        </nav>
+    </div>
+    <header class="header">
+        <nav class="header-menu container">
+            <ul class="header-menu__list">
+                <li><a href="index.html" class="header-menu__link">Home</a></li>
+                <li><a href="tours.html" class="header-menu__link">Tours</a></li>
+                <li><img src="img/header-logo.png" alt="header-logo"></li>
+                <li><a href="about_us.html" class="header-menu__link">About Us</a></li>
+                <li><a href="contact.html" class="header-menu__link header-menu__link-active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact__img">
+                <img src="img/contact/contact-welcome-img.png" alt="contact-img">
+            </div>
+            <div class="contact">
+                <h2 class="contact__title">Travel Agency</h2>
+                <h3 class="contact__info">Britain, London, Storgata 26</h3>
+                <a class="contact__info contact__info-link" href="tel:+47221234567">+47 22 123 45 67</a>
+                <a class="contact__info contact__info-link" href="mailto:hello@mail.com">hello@mail.com</a>
+                <h3 class="contact__info">Every day: 10 a.m. - 6 p.m.</h3>
+                <div class="contact-social">
+                    <a class="contact-social__icon fab fa-facebook fa-2x"></a>
+                    <a class="contact-social__icon fab fa-twitter fa-2x"></a>
+                    <a class="contact-social__icon fab fa-instagram fa-2x"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-menu container">
+            <div class="footer-list">
+                <div class="footer-list__title">Support</div>
+                <div class="footer-list__item">Community</div>
+                <div class="footer-list__item">Help Center</div>
+                <div class="footer-list__item">Privacy policy</div>
+            </div>
+            <div class="footer-list">
+                <div class="footer-list__title">Information</div>
+                <div class="footer-list__item">About Us</div>
+                <div class="footer-list__item">Templates</div>
+                <div class="footer-list__item">Cookies</div>
+                <div class="footer-list__item">Orders & Returns</div>
+            </div>
+            <div class="footer-list">
+                <div class="footer-list__title">Legal</div>
+                <div class="footer-list__item">Delivery</div>
+                <div class="footer-list__item">Secure payment</div>
+                <div class="footer-list__item">Support</div>
+                <div class="footer-list__item">Terms & Conditions</div>
+            </div>
+            <div class="footer-list">
+                <div class="footer-list__title">Store</div>
+                <div class="footer-list__item">Career</div>
+                <div class="footer-list__item">Inspiration</div>
+                <div class="footer-list__item">News</div>
+            </div>
+            <div class="footer-list">
+                <div class="footer-list__title">Follow Us</div>
+                <div class="footer-list__item">Facebook</div>
+                <div class="footer-list__item">Instagram</div>
+                <div class="footer-list__item">Twitter</div>
             </div>
         </div>
-    </section>
-</main>
-<footer class="footer">
-    <div class="footer-menu container">
-        <div class="footer-list">
-            <div class="footer-list__title">Support</div>
-            <div class="footer-list__item">Community</div>
-            <div class="footer-list__item">Help Center</div>
-            <div class="footer-list__item">Privacy policy</div>
-        </div>
-        <div class="footer-list">
-            <div class="footer-list__title">Information</div>
-            <div class="footer-list__item">About Us</div>
-            <div class="footer-list__item">Templates</div>
-            <div class="footer-list__item">Cookies</div>
-            <div class="footer-list__item">Orders & Returns</div>
-        </div>
-        <div class="footer-list">
-            <div class="footer-list__title">Legal</div>
-            <div class="footer-list__item">Delivery</div>
-            <div class="footer-list__item">Secure payment</div>
-            <div class="footer-list__item">Support</div>
-            <div class="footer-list__item">Terms & Conditions</div>
-        </div>
-        <div class="footer-list">
-            <div class="footer-list__title">Store</div>
-            <div class="footer-list__item">Career</div>
-            <div class="footer-list__item">Inspiration</div>
-            <div class="footer-list__item">News</div>
-        </div>
-        <div class="footer-list">
-            <div class="footer-list__title">Follow Us</div>
-            <div class="footer-list__item">Facebook</div>
-            <div class="footer-list__item">Instagram</div>
-            <div class="footer-list__item">Twitter</div>
-        </div>
-    </div>
-</footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="js/burger.js"></script>
 </body>
+
 </html>

@@ -24,6 +24,7 @@ body {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.1em;
+    visibility: hidden;
 }
 .header-menu {
     height: 90px;
