@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Armalite Rifle';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Armalite Rifle'), url('../fonts/armalite_rifle.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/bg.png) top center no-repeat;
+}
+a,
+a::after,
+a::before {
+    text-decoration: none;
+    color: #000;
+}
+
+.font__armalite {
+    font-family: 'Armalite Riffle', serif;
+}
+.font__special-elite {
+    font-family: 'Special Elite', cursive;
+}
+
+.container {
+    width: 100%;
+    max-width: 1380px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.header__link {
+    width: 200px;
+    height: 151px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/header-item.png) center center no-repeat;
+    background-size: contain;
+    font-family: 'Armalite Rifle', serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    transform: translateY(-30px);
+    transition: transform 0.2s ease-out;
+}
+.header__link:hover {
+    transform: translateY(-5px);
+}
+.header__link-active {
+    transform: translateY(-5px);
+}
+
+.welcome-index {
+    width: 100%;
+    height: 870px;
+    background: url(../img/index/index-bg-1.png) center center no-repeat;
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 200px;
+    margin-top: 200px;
+}
+.welcome-title {
+    font-family: 'Armalite Rifle', serif;
+    font-size: 72px;
+    line-height: 83px;
+    text-align: center;
+}
+.welcome-index__pict {
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 630px;
+    background: url(../img/index/welcome-bg.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+.text {
+    font-family: 'Special Elite', cursive;
+    font-size: 24px;
+    line-height: 145%;
+}
+
+.footer {
+    font-family: 'Spectral', serif;
+    padding: 120px 0;
+    background: url(../img/footer-bg.png) bottom center no-repeat;
+    background-size: contain;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 50px 100px 0px 100px;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #595959;
+}
+.footer-list__title {
+    color: #000;
+    margin-bottom: 20px;
+}
+.footer-list__item {
+    transition: .3s;
+    cursor: pointer;
+}
+.footer-list__item:hover {
+    color: #000;
+}
+.footer-copy {
+    text-align: center;
+    color:#595959;
+    margin-top: 50px;
+}
+
+.tour {
+    position: relative;
+    width: 100%;
+    height: 873px;
+    background: url(../img/tours/tour-bg-1.png) center center no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    padding: 120px 10% 0 10%;
+}
+.tour:nth-child(even) {
+    justify-content: flex-start;
+}
+.tour__pict {
+    position: absolute;
+    top: 100px;
+    left: -50px;
+}
+.tour:nth-child(even) .tour__pict {
+    left: initial;
+    right: -50px;
+}
+.tour__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.tour__title {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.tour__text {
+    font-size: 21px;
+    line-height: 140%;
+    text-align: justify;
+}
+.tour__button {
+    width: 350px;
+    height: 128px;
+    padding-top: 20px;
+    border: none;
+    background: url(../img/btn-bg.png) center center no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.about {
+    width: 100%;
+    height: 872px;
+    padding: 160px 8% 0 10%;
+    display: flex;
+    background: url(../img/tours/tour-bg-1.png);
+}
+.about__pict {
+    position: relative;
+}
+.about__img {
+}
+.about__img img {
+    transform: rotate(-4.93deg);
+}
+.clip {
+    position: absolute;
+}
+.clip-1 {
+    top: -80px;
+    left: 130px;
+}
+.clip-2 {
+    left: -80px;
+    bottom: 100px;
+    transform: rotate(-136.81deg);
+}
+.clip-3 {
+    right: -70px;
+    bottom: 200px;
+    transform: rotate(106.81deg);
+}
+.about__info {
+    padding: 0 0 0 100px;
+}
+.about__title {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.about__subtitle {
+    font-size: 32px;
+}
+.about__text {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    color: #5b5b5b;
+    margin: 50px 0 0 0;
+}
+
+.contact {
+    position: relative;
+    width: 100%;
+    height: 872px;
+    background: url(../img/tours/tour-bg-1.png) center center no-repeat;
+    background-size: contain;
+    padding: 116px 100px;
+    margin-top: 200px;
+}
+.contact__map {
+}
+.contact__info {
+    position: absolute;
+    top: -120px;
+    left: 150px;
+    width: 488px;
+    height: 372px;
+    background: url(../img/contact/info-bg.png) center center no-repeat;
+    background-size: contain;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact__link {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Special Elite', serif;
+}
+.clip__contact-1 {
+    left: 50px;
+    bottom: 100px;
+    transform: rotate(-136.81deg);
+}
+.clip__contact-2 {
+    right: 10px;
+    bottom: 100px;
+    transform: rotate(106.81deg);
+}
