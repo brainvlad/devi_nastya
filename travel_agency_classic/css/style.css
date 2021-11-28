@@ -145,7 +145,7 @@ body {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
 }
 .tour-item__title {
     display: flex;
@@ -326,5 +326,31 @@ body {
 .map {
     width: 70%;
     height: 600px;
+}
+
+.spoiler__title {
+    position: relative;
+    cursor: pointer;
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-weight: bold;
+}
+.spoiler__title::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    left: 90px;
+    background: url(../img/spoiler.svg) center center no-repeat;
+    transition: all 0.2s ease-in 0s;
+    transform: rotate(-90deg);
+}
+.spoiler__title.active::before {
+    transform: rotate(0deg);
+}
+
+.spoiler__text {
+    display: none;
 }
 

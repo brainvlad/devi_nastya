@@ -16,18 +16,10 @@ function burgerMenu(selector) {
         menu.toggleClass('burger-menu-active')
 
         if (menu.hasClass('burger-menu-active')) {
-            // $('body').css('overflow', 'hidden')
             $('.burger-menu__overlay').fadeIn(200)
         } else {
-            // $('body').css('overflow', 'visible')
             $('.burger-menu__overlay').fadeOut(100)
         }
-
-        // if (button.is(':visible')) {
-        //     button.hide(100)
-        // } else if (button.is(':hidden')) {
-        //     button.show();
-        // }
     }
 }
 
