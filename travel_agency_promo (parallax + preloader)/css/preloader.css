@@ -1,0 +1,71 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;  
+    background: #fefefe;
+    z-index: 1001;
+}
+  
+.prelodaer__block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 130px;
+    height: 130px;
+    background: -webkit-linear-gradient(45deg, rgb(22, 63, 80), rgb(60, 163, 109));
+    background: -moz-linear-gradient(45deg, rgb(22, 63, 80), rgb(60, 163, 109));
+    background: linear-gradient(45deg, rgb(22, 63, 80, 0.75), rgba(60, 163, 110, 0.75)),
+                url(../img/earth.png) center center/120% 120% no-repeat;
+
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+    animation-name: radius;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes radius {
+    from {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        width: 130px;
+        height: 130px;
+    }
+    50% {
+        border-radius: 27% 73% 37% 63% / 63% 23% 77% 37%;
+        width: 150px;
+        height: 150px;
+    }
+    to {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        width: 130px;
+        height: 130px;
+    }
+}
+
+.preloader__img {
+    filter: invert();
+}
+.preloader__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 70px;
+    border-radius: 100%;
+    opacity: 0.9;
+}
+  
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+  
+.loaded .preloader {
+    display: none;
+}
